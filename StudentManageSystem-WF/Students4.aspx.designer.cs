@@ -11,7 +11,7 @@ namespace StudentManageSystem_WF
 {
 
 
-    public partial class Students2
+    public partial class Students4
     {
 
         /// <summary>

@@ -11,14 +11,16 @@
         td {
             padding: 5px 1em;
         }
+        .stu-list {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <h3>学生列表</h3>
-        <div>
-            <asp:GridView ID="GridView1" runat="server">
-                </asp:GridView>
+        <div class="stu-list">
+            <asp:GridView ID="studentsGV" runat="server" />
         </div>
     </form>
 
