@@ -1,10 +1,15 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Students5.aspx.cs" Inherits="StudentManageSystem_WF.Students5" %>
+<%@ Register Src="~/MyLogin.ascx" TagName="MyLogin" TagPrefix="fl" %>
+
 <html>
 <head runat="server">
     <title></title>
 </head>
 <body>
     <form id="form1" runat="server">
+        <div>
+            <fl:MyLogin runat="server" DefaultUsername="xxx" />
+        </div>
         <div>
             <%--<asp:Repeater ID="sl" runat="server">
                 <HeaderTemplate>
