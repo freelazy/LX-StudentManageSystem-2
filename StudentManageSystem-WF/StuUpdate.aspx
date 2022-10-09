@@ -1,18 +1,59 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="StuUpdate.aspx.cs" Inherits="StudentManageSystem_WF.StuUpdate" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+<html>
+<head>
+    <style>
+        .btn-group {
+            padding: 2em;
+            display: flex;
+            justify-content: space-around;
+            width: 200px;
+        }
+    </style>
 </head>
 <body>
-    <form id="form1" runat="server">
-        学生编号：<asp:TextBox runat="server" id="txtId"/><br />
-        学生姓名：<asp:TextBox runat="server" id="txtName"/><br />
-        学生地址：<asp:TextBox runat="server" id="txtHomecity"/><br />
-        <asp:Button id="btnUpdate" runat="server" Text="修改" OnClick="btnUpdate_Click"/>
+    <h3> 添加学生 </h3>
+    <form runat="server">
+        <p>
+            <asp:Label ID="warning" runat="server" style="color: red; background: lightyellow; padding: 5px;">
+                欢迎您使用此功能
+            </asp:Label>
+        </p>
+        <div>
+            <div>
+                <span>学号</span>
+                <span><asp:TextBox ID="tbId" runat="server" ReadOnly="true"/></span>
+            </div>
+            <div>
+                <span>姓名</span>
+                <span><asp:TextBox ID="tbName" runat="server"/></span>
+            </div>
+            <div>
+                <span>电话</span>
+                <span><asp:TextBox ID="tbTelephone" runat="server"/></span>
+            </div>
+            <div>
+                <span>地址</span>
+                <span><asp:TextBox ID="tbHomecity" runat="server"/></span>
+            </div>
+            <div>
+                <span>读音</span>
+                <span><asp:TextBox ID="tbDuyin" runat="server"/></span>
+            </div>
+            <div>
+                <span>状态</span>
+                <span><asp:TextBox ID="tbState" runat="server"/></span>
+            </div>
+        </div>
+        <div class='btn-group'>
+            <button onclick='goHome(); return false'>返回首页</button>
+            <asp:Button Text="保存" runat="server" OnClick="btnUpdate_Click" />
+        </div>
     </form>
+    <script>
+        function goHome() {
+            window.location.href = '/StuList';
+        }
+    </script>
 </body>
 </html>

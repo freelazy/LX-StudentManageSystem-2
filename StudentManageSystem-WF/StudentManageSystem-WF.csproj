@@ -159,7 +159,6 @@
     <Content Include="Mass\ViewStateYanjiu.aspx" />
     <Content Include="Mass\ViewSwitcher.ascx" />
     <Content Include="StuAdd.aspx" />
-    <Content Include="StuDelete.aspx" />
     <Content Include="StuDetail.aspx" />
     <Content Include="StuList.aspx" />
     <Content Include="StuUpdate.aspx" />
@@ -223,12 +222,8 @@
     <Compile Include="StuAdd.aspx.designer.cs">
       <DependentUpon>StuAdd.aspx</DependentUpon>
     </Compile>
-    <Compile Include="StuDelete.aspx.cs">
-      <DependentUpon>StuDelete.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="StuDelete.aspx.designer.cs">
-      <DependentUpon>StuDelete.aspx</DependentUpon>
+    <Compile Include="StuDelete.ashx.cs">
+      <DependentUpon>StuDelete.ashx</DependentUpon>
     </Compile>
     <Compile Include="StuDetail.aspx.cs">
       <DependentUpon>StuDetail.aspx</DependentUpon>
@@ -277,6 +272,7 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="StuDelete.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
